@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrossel Bootstrap</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .carousel-item {
+      height: 65vh;
+      background-color: #777;
+      color: white;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .carousel-caption {
+      bottom: 20%;
+    }
+
+    .marketing {
+      margin: 4rem 0;
+    }
+
+    .featurette {
+      padding: 4rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header com navegação -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Meu Site</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+          <li class="nav-item"><a class="nav-link" href="recursos.html">Recursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Carrossel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top: 56px;">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('1184_Modificado.jpg');">
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>Primeiro slide</h1>
+            <p>Exemplo de conteúdo introdutório para o primeiro slide do carrossel.</p>
+            <p><a class="btn btn-lg btn-primary" href="pagina1.html" role="button">Saiba mais</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image: url('1184_Original.jpg');">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Segundo slide</h1>
+            <p>Mais uma frase atrativa para prender a atenção do visitante.</p>
+            <p><a class="btn btn-lg btn-primary" href="pagina2.html" role="button">Ver mais</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="background-image: url('Malha_Triangular.png');">
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h1>Terceiro slide</h1>
+            <p>Uma chamada final para engajar o usuário.</p>
+            <p><a class="btn btn-lg btn-primary" href="pagina3.html" role="button">Comece agora</a></p>
+          </div>
+        </div>
+      </div>
+
+            <div class="carousel-item" style="background-image: url('O_Coracao.png');">
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h1>Quarto slide</h1>
+            <p>Para a pessoa ser converncia no projeto.</p>
+            <p><a class="btn btn-lg btn-primary" href="pagina4.html" role="button">Comece agora</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+
+
+  <!-- Scripts do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
